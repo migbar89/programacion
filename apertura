@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+	FILE *fich;
+	fich=fopen("fichero.txt","w");
+	if(fich==NULL)
+	{
+		printf("Error al abrir el fichero\n");
+		return 0;
+	}
+	printf("Apertura del fichero Exitosa\n");
+	return 0;
+}
+
